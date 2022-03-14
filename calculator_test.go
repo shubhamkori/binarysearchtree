@@ -53,3 +53,20 @@ func Test_add_0_0(t *testing.T) {
 	}
 
 }
+func Test_Sub_2_3(t *testing.T) {
+
+	t.Logf("Hello")
+	// define variables for test / Preparation
+	a := 2
+	b := 3
+	wanted := -1
+
+	// call function to test
+	got := Sub(a, b)
+
+	// verify result
+	if got != wanted {
+		t.Errorf("Sub(%d,%d) = %d, wanted %d", a, b, got, wanted)
+	}
+
+}
